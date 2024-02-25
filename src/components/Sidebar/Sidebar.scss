@@ -1,0 +1,170 @@
+.sidebar {
+  width: 14rem;
+  height: 90vh;
+
+  .side-container {
+    padding: 10px 15px;
+
+    .side-link {
+      border-bottom: 1px solid #404040;
+      padding-bottom: 10px;
+      .link {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin: 10px 0px;
+        border-radius: 20px;
+        padding: 8px;
+        transition: 0.5s ease-in;
+        cursor: pointer;
+
+        a {
+          text-decoration: none;
+          color: #fefefe;
+        }
+        h3 {
+          font-size: 0.9rem;
+          font-weight: 400;
+          text-transform: capitalize;
+        }
+        .link-icon {
+          font-size: 1.2rem;
+          margin-left: 10px;
+        }
+
+        h5 {
+          font-size: 1rem;
+          font-weight: 400;
+        }
+        .forwArrow {
+          font-size: 1rem;
+        }
+        .lybrary {
+          display: none;
+        }
+      }
+      .active {
+        background-color: #404040;
+      }
+      .link:hover {
+        background-color: #404040;
+      }
+    }
+  }
+}
+
+// for toggle button
+
+.toggleSidebar {
+  width: 5rem;
+  height: 90vh;
+
+  .side-container {
+    padding: 10px 0px;
+
+    .link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 15px 5px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      cursor: pointer;
+
+      .link-icon {
+        font-size: 1.4rem;
+      }
+      a {
+        color: #fefefe;
+        text-decoration: none;
+      }
+      h3,
+      h5 {
+        font-size: 0.7rem;
+        font-weight: 400;
+      }
+    }
+    .lybrary {
+      display: block;
+      font-size: 1.4rem;
+    }
+    .hide {
+      display: none;
+    }
+    .link:hover {
+      background-color: #404040;
+    }
+  }
+}
+
+// Responsive for smaller devices
+
+@media (max-width: 786px) {
+  .toggleSidebar {
+    width: 14rem;
+    height: 90vh;
+    position: absolute;
+    background-color: #313131;
+    z-index: 1;
+
+    .side-container {
+      padding: 10px 15px;
+
+      .side-link {
+        border-bottom: 1px solid #404040;
+        padding-bottom: 10px;
+        .link {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 1rem;
+          margin: 10px 0px;
+          border-radius: 20px;
+          padding: 8px;
+          transition: 0.5s ease-in;
+          cursor: pointer;
+
+          a {
+            text-decoration: none;
+            color: #fefefe;
+          }
+          h3 {
+            font-size: 0.9rem;
+            font-weight: 400;
+            text-transform: capitalize;
+          }
+          .link-icon {
+            font-size: 1.2rem;
+            margin-left: 10px;
+          }
+
+          h5 {
+            font-size: 1rem;
+            font-weight: 400;
+          }
+          .forwArrow {
+            font-size: 1rem;
+          }
+          .lybrary {
+            display: none;
+          }
+        }
+        .active {
+          background-color: #404040;
+        }
+        .link:hover {
+          background-color: #404040;
+        }
+      }
+    }
+  }
+
+  .sidebar {
+    width: 0rem;
+
+    .side-container {
+      display: none;
+    }
+  }
+}
